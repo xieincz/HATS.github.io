@@ -147,7 +147,7 @@
         </div>
     </section>
 
-    <section class="section" style="background-color:#efeff081">
+    <section class="section" style="background-color:#ffffff">
         <div class="container is-max-widescreen">
             <div class="rows">
                 <div class="rows is-centered ">
@@ -171,7 +171,7 @@
     </section>
 
 
-    <section class="section" style="background-color:#ffffff">
+    <section class="section" style="background-color:#efeff081">
         <div class="container is-max-widescreen">
             <div class="rows">
                 <div class="rows is-centered ">
@@ -202,31 +202,24 @@
     </section>
 
 
-    <section class="section" style="background-color:#efeff081">
-        <div class="container is-max-widescreen">
-            <div class="rows">
-                <div class="rows is-centered ">
-                    <div class="row is-full-width">
-                        <h2 class="title is-3">HATS Framework</h2>
-                        <img src="assets/images/fig3.png" class="interpolation-image" alt=""
-                            style="display: block; margin-left: auto; margin-right: auto" />
-                        <br>
-                        <span style="font-size: 110%">
-                            HATS consists of two cooperative modules unified through <b>Hardness-Driven Monte Carlo Tree Search (HD-MCTS)</b>:
-                        </span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-
     <section class="section" style="background-color:#ffffff">
         <div class="container is-max-widescreen">
             <div class="rows">
                 <div class="rows is-centered ">
                     <div class="row is-full-width">
-                        <h2 class="title is-3">Hardness-Driven Exploration Module</h2>
+                        <h2 class="title is-3">HATS Framework</h2>
+                        <span style="font-size: 110%">
+                            HATS consists of two cooperative modules unified through <b>Hardness-Driven Monte Carlo Tree Search (HD-MCTS)</b>.
+                            The exploration module steers data collection toward semantically ambiguous interactions,
+                            while the refinement module iteratively validates and repairs instruction&ndash;execution alignment.
+                            The two modules operate in a closed loop, as illustrated below.
+                        </span>
+                        <br><br>
+                        <img src="assets/images/fig3.png" class="interpolation-image" alt=""
+                            style="display: block; margin-left: auto; margin-right: auto" />
+
+                        <!-- Sub-section: Exploration -->
+                        <h3 class="title is-4" style="margin-top: 40px;">1. Hardness-Driven Exploration Module</h3>
                         <img src="assets/images/fig4.png" class="interpolation-image" alt=""
                             style="display: block; margin-left: auto; margin-right: auto; max-width: 60%" />
                         <br>
@@ -242,19 +235,9 @@
                             <li>Prioritizes under-represented, semantically complex UI states</li>
                             <li>Concentrates search effort on high-value, ambiguous actions</li>
                         </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
 
-
-    <section class="section" style="background-color:#efeff081">
-        <div class="container is-max-widescreen">
-            <div class="rows">
-                <div class="rows is-centered ">
-                    <div class="row is-full-width">
-                        <h2 class="title is-3">Alignment-Guided Refinement Module</h2>
+                        <!-- Sub-section: Refinement -->
+                        <h3 class="title is-4" style="margin-top: 40px;">2. Alignment-Guided Refinement Module</h3>
                         <img src="assets/images/fig5.png" class="interpolation-image" alt=""
                             style="display: block; margin-left: auto; margin-right: auto; max-width: 60%" />
                         <br>
@@ -276,19 +259,9 @@
                         <span style="font-size: 110%">
                             Only verified trajectories passing alignment checks are admitted to the training corpus.
                         </span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
 
-
-    <section class="section" style="background-color:#ffffff">
-        <div class="container is-max-widescreen">
-            <div class="rows">
-                <div class="rows is-centered ">
-                    <div class="row is-full-width">
-                        <h2 class="title is-3">Closed-Loop Integration</h2>
+                        <!-- Sub-section: Closed Loop -->
+                        <h3 class="title is-4" style="margin-top: 40px;">3. Closed-Loop Integration</h3>
                         <div class="content" style="font-size: 110%">
                             <p>The two modules form a feedback cycle:</p>
                             <ol>
